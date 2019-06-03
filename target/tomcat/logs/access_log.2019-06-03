@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [03/Jun/2019:21:41:30 +0900] "GET /restaurant-servlet/calculator HTTP/1.1" 200 445 http-bio-8080-exec-1 822
+0:0:0:0:0:0:0:1 - - [03/Jun/2019:21:41:37 +0900] "POST /restaurant-servlet/calculator HTTP/1.1" 200 444 http-bio-8080-exec-3 9
+0:0:0:0:0:0:0:1 - - [03/Jun/2019:21:41:48 +0900] "POST /restaurant-servlet/calculator HTTP/1.1" 200 444 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [03/Jun/2019:21:41:54 +0900] "POST /restaurant-servlet/calculator HTTP/1.1" 200 445 http-bio-8080-exec-6 2
+0:0:0:0:0:0:0:1 - - [03/Jun/2019:21:42:29 +0900] "GET /restaurant-servlet/calculator HTTP/1.1" 200 445 http-bio-8080-exec-7 2
+0:0:0:0:0:0:0:1 - - [03/Jun/2019:21:43:09 +0900] "GET /restaurant-servlet/calculator HTTP/1.1" 200 417 http-bio-8080-exec-9 84
+0:0:0:0:0:0:0:1 - - [03/Jun/2019:21:43:16 +0900] "POST /restaurant-servlet/calculator HTTP/1.1" 200 447 http-bio-8080-exec-9 2
+0:0:0:0:0:0:0:1 - - [03/Jun/2019:21:43:35 +0900] "POST /restaurant-servlet/calculator HTTP/1.1" 200 452 http-bio-8080-exec-9 90
+0:0:0:0:0:0:0:1 - - [03/Jun/2019:21:43:40 +0900] "POST /restaurant-servlet/calculator HTTP/1.1" 200 452 http-bio-8080-exec-9 2
