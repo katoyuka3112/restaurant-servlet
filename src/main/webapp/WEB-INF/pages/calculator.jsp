@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Calculator</title>
 </head>
 <body>
 <form action = "<%=request.getContextPath()%>/calculator" method="post" >
