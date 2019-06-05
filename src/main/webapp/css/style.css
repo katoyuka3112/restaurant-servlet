@@ -1,0 +1,65 @@
+body {
+	font-family:sans-serif;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    width: 400px;
+    margin: 100px auto 0;
+    box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff4fa;
+}
+
+.wrapper h1 {
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    color: blue;
+    font-size: 25px;
+}
+
+.wrapper form {
+	text-align: center;
+}
+
+.wrapper form .form-control {
+	text-align: right;
+    width: 320px;
+}
+
+.wrapper form span {
+    font-weight: bold;
+    font-size: 15px;
+    color: #ff52f6;
+    text-transform: uppercase;
+}
+
+.wrapper form .form-control .number {
+	font-weight: bold;
+	color: #f56666;
+}
+
+.wrapper form .form-control input {
+	width: 155px;
+    height: 20px;
+    margin: 5px 0;
+    padding: 5px 3px;
+    font-size: 15px;
+	border-radius: 5px;
+	border:1px solid #cccccc
+}
+
+.wrapper form .form-control button {
+	background: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.wrapper form .form-control button:hover {
+	color: blue;
+}
