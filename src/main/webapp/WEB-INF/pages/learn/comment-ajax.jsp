@@ -10,12 +10,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/reset.css" />
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/comment.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.ajax({
+    	url: "<%=request.getContextPath()%>/comment-ajax",
+    	data: {
+    		name: $("input[name=name]").val(),
+    		comment: $("textarea[name=comment]").val(),
+    	},
+    	method: "POST",
+    	success: function(result){
+      		$("#comments").prepend(result);
+    	}
+   	});
+  });
+});
+</script>
 <title>Comment</title>
 </head>
 <body>
 <div class="wrapper">
 	<div class="left">
-		 <form action="<%=request.getContextPath()%>/comment" method="post">
+		 <form action="javascript:void(0)" method="post">
 		 	 <div class="form-control-txtarea">
 		 		<textarea name="comment" class="txtarea" placeholder="Nội dung bình luận"></textarea>
 			 </div>
@@ -28,7 +46,7 @@
 		 </form>
 	</div>
 	<% List<Comment> listComment = (ArrayList) request.getAttribute("listComment"); %>
-	<div class="right">
+	<div class="right" id="comments">
 	<%
 	if (listComment != null) {
 		for (int i = listComment.size() - 1; i >= 0; i--) { %>
